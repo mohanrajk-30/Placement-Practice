@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scanner = new Scanner(System.in);
+        int n,r,c,val;
+        n = scanner.nextInt();
+        for(r=1;r<=n;r++){
+            if(r%2==0){
+                val =2;
+            }
+            else
+            {
+                val=1;
+            }
+        for(c=1;c<=r;c++){
+            System.out.print(val);
+            val =val +2;
+        }
+          System.out.println();  
+        }
+    }
+}
